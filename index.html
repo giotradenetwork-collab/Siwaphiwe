@@ -56,7 +56,7 @@
 <body>
     <div class="card">
         <h2>Hi there, unlock your secret letter by telling us, what is your favourite muesli flavour?</h2>
-        <input type="text" id="nameInput" placeholder="This works only if you type it with a smile on your face :)" />
+        <input type="text" id="nameInput" placeholder="Only works if you type it with a smile on your face :)" />
         <button onclick="sendMessage()">Show Message</button>
         <div class="message" id="output"></div>
     </div>
@@ -74,15 +74,21 @@
                 flavor === "mixed berries"
             ) {
                 output.innerHTML = `🌸 <strong>Good Morning, Siwaphiwe!</strong> 🌸<br><br>
-                May God fill your day  with peace, warmth, and beautiful moments.<br>
-                May everything you touch turn out well, and may positivity follow you
-                in every step you take today. You deserve a day as lovely as you are.<br><br>
+                
+                On this Tuesday, may God fill your day with peace, warmth, and beautiful moments.<br>
+                May your path be light, your heart be steady, and every moment unfold with grace.
+                May everything you touch turn out well, and may positivity follow you.
+                Whatever you face today, may you find the strength to rise above it 
+                and the peace to move through it with confidence.
+                
+                You deserve a day as lovely as you are.<br><br>
                 Wishing you smiles, strength, and success.<br><br>
-                To keep that smile longer on your face, FNB has those funny-looking big boxes called ATM's. 
+                
+                I heard FNB has those funny-looking big boxes called ATM's. 
                 Apparently, those things are always loaded with free money imagine haha, well let's try it today.  
-                Pick any one of them. A little birdie told us there's a R100.00 note with your name on it just for your snacks.<br><br>
+                Pick any one of them. A little birdie told me there's a R100.00 note with your name on it just for your snacks.<br><br>
                 If it costs you more, 
-                kindly send the bill to the gentleman who sent you this because clearly, he sucks at Girl Math, let him handle it !<br><br>
+                kindly send the bill to this gentleman because clearly, he sucks at Girl Math, let him handle it !<br><br>
                 061 531 3938<br>
                 Pin: 96747`;
             } else if (flavor.length > 0) {

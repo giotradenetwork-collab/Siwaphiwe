@@ -1,1 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To unlock your secret letter, what is your favourite muesli flavour?</title>
+    <style>
+        body {
+            font-family: serif;
+            background: #f7f7ff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+        }
+        input {
+            width: 100%;
+            padding: 12px;
+            border-radius: 10px;
+            border: 1px solid #bbb;
+            margin-top: 10px;
+            font-size: 16px;
+            font-family: inherit;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 15px;
+            border: none;
+            border-radius: 10px;
+            background: #6c63ff;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            font-family: inherit;
+        }
+        button:hover {
+            background: #5851db;
+        }
+        .message {
+            margin-top: 20px;
+            font-size: 17px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Hi there, unlock your secret letter by telling us, what is your favourite muesli flavour?</h2>
+        <input type="text" id="nameInput" placeholder="Only works if you type with a smile on your face :)" />
+        <button onclick="sendMessage()">Show Message</button>
+        <div class="message" id="output"></div>
+    </div>
+
+    <script>
+        function sendMessage() {
+            const flavor = document.getElementById("nameInput").value.trim().toLowerCase();
+            const output = document.getElementById("output");
+
+            if (
+                flavor === "berry" ||
+                flavor === "berry muesli" ||
+                flavor === "mixed berry" ||
+                flavor === "mixed berry muesli" ||
+                flavor === "mixed berries"
+            ) {
+                output.innerHTML = `
+Good Morning, Siwaphiwe!<br><br>
+
+On this Wednesday morning, may God surround your day with peace, warmth, and gentle blessings.<br>
+May your path be light, may your heart stay steady, and may every moment unfold with a touch of grace.<br>
+I pray that whatever you do today works in your favour, and that positivity quietly follows you everywhere you go.<br><br>
+
+Whatever challenges come your way, may you rise above them with strength, calmness, and confidence.<br>
+You deserve a day as lovely, soft, and beautiful as you are.<br><br>
+
+Wishing you smiles, courage, and small victories throughout the day.<br><br>
+
+Oh, and apparently FNB has those funny-looking big boxes called ATMs, the ones that are always "mysteriously" filled with free money.<br>
+So… let's test that theory today. Pick any one of them.<br>
+A little birdie whispered that there are a few notes inside with your name on them, just for your snacks.<br><br>
+
+And if your snacks betray you and cost more…<br>
+please forward the bill to the gentleman who sent this, clearly he's terrible at Girl Math, so let him fix it.<br><br>
+
+071 136 6979<br>
+Pin: 56067
+                `;
+            } else if (flavor.length > 0) {
+                output.innerHTML = `Hmm... that flavour doesn't unlock the secret letter.`;
+            } else {
+                output.innerHTML = "Please enter a flavour first.";
+            }
+        }
+    </script>
+
+    <p style="text-align:center; font-size:14px; color:#777;">Thoughtfully Coded by Thaps 💖</p>
+</body>
+</html>  
 

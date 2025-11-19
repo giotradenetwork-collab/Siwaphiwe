@@ -4,13 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To unlock your secret letter, what is your favourite muesli flavour?</title>
-
-    <!-- Beautiful Serif Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
-
     <style>
         body {
-            font-family: 'Playfair Display', serif;
+            font-family: serif;
             background: #f7f7ff;
             display: flex;
             flex-direction: column;
@@ -79,24 +75,28 @@
                 flavor === "mixed berry muesli" ||
                 flavor === "mixed berries"
             ) {
-                output.innerHTML = `🌸 <strong>Good Morning, Siwaphiwe!</strong> 🌸<br><br>
-                
-                On this Wednesday, may God fill your day with peace, warmth, and beautiful moments.<br>
-                May your path be light, your heart be steady, and every moment unfold with grace.
-                May everything you touch turn out well, and may positivity follow you.
-                Whatever you face today, may you find the strength to rise above it 
-                and the peace to move through it with confidence.
-                
-                You deserve a day as lovely as you are.<br><br>
-                Wishing you smiles, strength, and success.<br><br>
-                
-                I heard FNB has those funny-looking big boxes called ATM's. 
-                Apparently, those things are always loaded with free money imagine haha, well let's try it today.  
-                Pick any one of them. A little birdie told me there's some notes with your name on it just for your snacks.<br><br>
-                If it costs you more, 
-                kindly send the bill back to the gentleman who sent this because clearly, he sucks at Girl Math, let him handle it!<br><br>
-                071 136 6979<br>
-                Pin: 56067`;
+                output.innerHTML = `
+Good Morning, Siwaphiwe!<br><br>
+
+On this Wednesday morning, may God surround your day with peace, warmth, and gentle blessings.<br>
+May your path be light, may your heart stay steady, and may every moment unfold with a touch of grace.<br>
+I pray that whatever you do today works in your favour, and that positivity quietly follows you everywhere you go.<br><br>
+
+Whatever challenges come your way, may you rise above them with strength, calmness, and confidence.<br>
+You deserve a day as lovely, soft, and beautiful as you are.<br><br>
+
+Wishing you smiles, courage, and small victories throughout the day.<br><br>
+
+Oh, and apparently FNB has those funny-looking big boxes called ATMs - the ones that are always "mysteriously" filled with free money.<br>
+So… let's test that theory today. Pick any one of them.<br>
+A little birdie whispered that there are a few notes inside with your name on them, just for your snacks.<br><br>
+
+And if your snacks betray you and cost more…<br>
+please forward the bill to the gentleman who sent this — clearly he's terrible at Girl Math, so let him fix it.<br><br>
+
+071 136 6979<br>
+Pin: 56067
+                `;
             } else if (flavor.length > 0) {
                 output.innerHTML = `Hmm... that flavour doesn't unlock the secret letter.`;
             } else {
@@ -108,3 +108,4 @@
     <p style="text-align:center; font-size:14px; color:#777;">Thoughtfully Coded by Thaps 💖</p>
 </body>
 </html>
+
